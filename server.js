@@ -19,7 +19,8 @@ var options = {
   url: 'https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary',
   params: {word: req.query.word},
   headers: {
-    'X-RapidAPI-Key': 'b75ced1511msh9c551f30cb73c24p10a6d3jsn560f2f07826d',
+    'X-RapidAPI-Key': process.env.RAPIDAPI_API_KEY,
+    // 'X-RapidAPI-Key': 'b75ced1511msh9c551f30cb73c24p10a6d3jsn560f2f07826d',
     'X-RapidAPI-Host': 'dictionary-by-api-ninjas.p.rapidapi.com'
   }
 };
